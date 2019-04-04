@@ -33,7 +33,7 @@ import java.awt.Color;
  *  @author Kevin Wayne
  */
 public class CollisionSystem {
-    private static final double HZ = 0.5;    // number of redraw events per clock tick
+    private final static double HZ = 0.5;    // number of redraw events per clock tick
 
     private MinPQ<Event> pq;          // the priority queue
     private double t  = 0.0;          // simulation clock time

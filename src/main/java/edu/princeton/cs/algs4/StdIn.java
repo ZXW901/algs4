@@ -314,8 +314,7 @@ public final class StdIn {
             return ch.charAt(0);
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attempts to read a 'char' value from standard input, "
-                                           + "but no more tokens are available");
+            throw new NoSuchElementException("attempts to read a 'char' value from standard input, but there are no more tokens available");
         }
     }  
 
@@ -348,8 +347,7 @@ public final class StdIn {
             return scanner.next();
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attempts to read a 'String' value from standard input, "
-                                           + "but no more tokens are available");
+            throw new NoSuchElementException("attempts to read a 'String' value from standard input, but there are no more tokens available");
         }
     }
 
@@ -366,12 +364,10 @@ public final class StdIn {
         }
         catch (InputMismatchException e) {
             String token = scanner.next();
-            throw new InputMismatchException("attempts to read an 'int' value from standard input, "
-                                           + "but the next token is \"" + token + "\"");
+            throw new InputMismatchException("attempts to read an 'int' value from standard input, but the next token is \"" + token + "\"");
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attemps to read an 'int' value from standard input, "
-                                           + "but no more tokens are available");
+            throw new NoSuchElementException("attemps to read an 'int' value from standard input, but there are no more tokens available");
         }
 
     }
@@ -389,12 +385,10 @@ public final class StdIn {
         }
         catch (InputMismatchException e) {
             String token = scanner.next();
-            throw new InputMismatchException("attempts to read a 'double' value from standard input, "
-                                           + "but the next token is \"" + token + "\"");
+            throw new InputMismatchException("attempts to read a 'double' value from standard input, but the next token is \"" + token + "\"");
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attempts to read a 'double' value from standard input, "
-                                           + "but no more tokens are available");
+            throw new NoSuchElementException("attempts to read a 'double' value from standard input, but there are no more tokens available");
         }
     }
 
@@ -411,12 +405,10 @@ public final class StdIn {
         }
         catch (InputMismatchException e) {
             String token = scanner.next();
-            throw new InputMismatchException("attempts to read a 'float' value from standard input, "
-                                           + "but the next token is \"" + token + "\"");
+            throw new InputMismatchException("attempts to read a 'float' value from standard input, but the next token is \"" + token + "\"");
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attempts to read a 'float' value from standard input, "
-                                           + "but there no more tokens are available");
+            throw new NoSuchElementException("attempts to read a 'float' value from standard input, but there are no more tokens available");
         }
     }
 
@@ -433,12 +425,10 @@ public final class StdIn {
         }
         catch (InputMismatchException e) {
             String token = scanner.next();
-            throw new InputMismatchException("attempts to read a 'long' value from standard input, "
-                                           + "but the next token is \"" + token + "\"");
+            throw new InputMismatchException("attempts to read a 'long' value from standard input, but the next token is \"" + token + "\"");
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attempts to read a 'long' value from standard input, "
-                                           + "but no more tokens are available");
+            throw new NoSuchElementException("attempts to read a 'long' value from standard input, but there are no more tokens available");
         }
     }
 
@@ -455,12 +445,10 @@ public final class StdIn {
         }
         catch (InputMismatchException e) {
             String token = scanner.next();
-            throw new InputMismatchException("attempts to read a 'short' value from standard input, "
-                                           + "but the next token is \"" + token + "\"");
+            throw new InputMismatchException("attempts to read a 'short' value from standard input, but the next token is \"" + token + "\"");
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attempts to read a 'short' value from standard input, "
-                                           + "but no more tokens are available");
+            throw new NoSuchElementException("attempts to read a 'short' value from standard input, but there are no more tokens available");
         }
     }
 
@@ -477,12 +465,10 @@ public final class StdIn {
         }
         catch (InputMismatchException e) {
             String token = scanner.next();
-            throw new InputMismatchException("attempts to read a 'byte' value from standard input, "
-                                           + "but the next token is \"" + token + "\"");
+            throw new InputMismatchException("attempts to read a 'byte' value from standard input, but the next token is \"" + token + "\"");
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attempts to read a 'byte' value from standard input, "
-                                           + "but no more tokens are available");
+            throw new NoSuchElementException("attempts to read a 'byte' value from standard input, but there are no more tokens available");
         }
     }
 
@@ -503,12 +489,10 @@ public final class StdIn {
             if ("false".equalsIgnoreCase(token)) return false;
             if ("1".equals(token))               return true;
             if ("0".equals(token))               return false;
-            throw new InputMismatchException("attempts to read a 'boolean' value from standard input, "
-                                           + "but the next token is \"" + token + "\"");
+            throw new InputMismatchException("attempts to read a 'boolean' value from standard input, but the next token is \"" + token + "\"");
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attempts to read a 'boolean' value from standard input, "
-                                           + "but no more tokens are available");
+            throw new NoSuchElementException("attempts to read a 'boolean' value from standard input, but there are no more tokens available");
         }
 
     }
